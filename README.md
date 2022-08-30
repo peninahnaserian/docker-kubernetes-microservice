@@ -43,8 +43,25 @@ source .devops/bin/activate
 3. Run in Kubernetes:  `./run_kubernetes.sh`
 
 ### Kubernetes Steps
-
 * Setup and Configure Docker locally
-* Setup and Configure Kubernetes locally
+1. Create a [free docker account](https://hub.docker.com/signup), where you'll choose a unique username   and link your email to a docker account. Your username is your unique docker ID.
+2. To install the latest version of docker, choose the Community Edition for your operating system, on [docker's installation site](https://docs.docker.com/get-docker/).
+3. After installation, you can verify that you've successfully installed docker by printing its version in your terminal: `docker --version`
+
+* Setup and Configure Kubernetes locally 
+1. Install a virtual machine like VirtualBox:
+    For Mac: `brew cask install virtualbox`
+    For Windows: recommend to use a [Windows host](https://www.virtualbox.org/wiki/Downloads)
+2. Install minikube :
+    For Mac : `brew cask install minikube`
+    For Windows: recommend using [Windows installer](https://minikube.sigs.k8s.io/docs/start/)
+3. Run `minikube start`
+4. Check if cluster is running `kubectl config view`
+
 * Create Flask app in Container
+Run the docker sript file: `./run_docker.sh`
+Upload the built image: `./upload_docker.sh`
+
 * Run via kubectl
+Run the kubernetes script file: `./run_kubernetes.sh`
+
