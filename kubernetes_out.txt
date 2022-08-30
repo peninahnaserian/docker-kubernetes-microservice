@@ -1,0 +1,16 @@
+(.devops) udacity-ml-microservice-kubernetes $ ./make_prediction.sh 
+Port: 8080
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
+(.devops) udacity-ml-microservice-kubernetes $ 
+
+(.devops) udacity-ml-microservice-kubernetes $ ./run_kubernetes.sh 
+Error from server (AlreadyExists): pods "projectpod" already exists
+NAME         READY   STATUS    RESTARTS   AGE
+projectpod   1/1     Running   0          77m
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
