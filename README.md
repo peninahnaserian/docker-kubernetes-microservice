@@ -1,4 +1,3 @@
-<include a CircleCI status badge, here>
 [![CircleCI](https://dl.circleci.com/status-badge/img/gh/peninahnaserian/docker-kubernetes-microservice/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/peninahnaserian/docker-kubernetes-microservice/tree/main)
 
 ## Project Overview
